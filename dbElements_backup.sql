@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.19, for Win64 (x86_64)
 --
--- Host: localhost    Database: dbelements
+-- Host: localhost    Database: dbElements
 -- ------------------------------------------------------
 -- Server version	5.7.19-log
 
@@ -26,8 +26,8 @@ CREATE TABLE `tblelementsincelsius` (
   `pkfldAtomicNumber` tinyint(4) NOT NULL,
   `fldAtomicSymbol` varchar(4) DEFAULT NULL,
   `fldName` varchar(30) DEFAULT NULL,
-  `fldMeltingPoint °C` double DEFAULT NULL,
-  `fldBoilingPoint °C` double DEFAULT NULL,
+  `fldMeltingPoint_Celsius` double DEFAULT NULL,
+  `fldBoilingPoint_Celsius` double DEFAULT NULL,
   `fldDiscoveryYear` int(11) DEFAULT NULL,
   `fldDiscoverer` varchar(60) DEFAULT NULL,
   `fldAtomicWeight` float DEFAULT NULL,
@@ -56,8 +56,8 @@ CREATE TABLE `tblelementsinfahrenheit` (
   `pkfldAtomicNumber` tinyint(4) NOT NULL AUTO_INCREMENT,
   `fldAtomicSymbol` varchar(4) DEFAULT NULL,
   `fldName` varchar(30) DEFAULT NULL,
-  `fldMeltingPoint` int(6) DEFAULT NULL,
-  `fldBoilingPoint` int(6) DEFAULT NULL,
+  `fldMeltingPoint_Fahrenheit` double DEFAULT NULL,
+  `fldBoilingPoint_Fahrenheit` double DEFAULT NULL,
   `fldDiscoveryYear` int(6) DEFAULT NULL,
   `fldDiscoverer` varchar(60) DEFAULT NULL,
   `fldAtomicWeight` float DEFAULT NULL,
@@ -86,8 +86,8 @@ CREATE TABLE `tblelementsinkelvin` (
   `pkfldAtomicNumber` tinyint(4) NOT NULL AUTO_INCREMENT,
   `fldAtomicSymbol` varchar(4) DEFAULT NULL,
   `fldName` varchar(30) DEFAULT NULL,
-  `fldMeltingPoint °K` int(6) DEFAULT NULL,
-  `fldBoilingPoint °K` int(6) DEFAULT NULL,
+  `fldMeltingPoint_Kelvin` double DEFAULT NULL,
+  `fldBoilingPoint_Kelvin` double DEFAULT NULL,
   `fldDiscoveryYear` int(11) DEFAULT NULL,
   `fldDiscoverer` varchar(60) DEFAULT NULL,
   `fldAtomicWeight` float DEFAULT NULL,
@@ -114,4 +114,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-09-18  7:48:24
+-- Dump completed on 2017-10-26  9:59:40
