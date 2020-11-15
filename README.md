@@ -1,4 +1,4 @@
-#MYSQL Elements databse
+#MYSQL Elements database
 
 ##This is a database that has the 118 elements in both Celsius, Fahrenheit and Kelvin degrees.
 
